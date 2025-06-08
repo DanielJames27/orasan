@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
 body {
-  background-image: url('IMG_8817.JPG'); /* <- EXAKTO ang spelling at caps! */
+  background-image: url('IMG_8817.JPG');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Orbitron', sans-serif;
   margin: 0;
   height: 100vh;
   display: flex;
@@ -12,21 +14,35 @@ body {
   justify-content: flex-start;
   align-items: center;
   padding-top: 40px;
-}
+  text-shadow: 2px 2px 8px #000; /* shadow para klaro sa image */
 }
 
 #clock {
   font-size: 60px;
   margin: 5px;
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
 }
 
-#date {
-  font-size: 25px;
-  margin: 5px;
-}
-
-#day {
+#date, #day {
   font-size: 25px;
   margin: 5px;
   font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 0 5px #000;
+}
+
+/* Responsive para sa cellphone */
+@media (max-width: 600px) {
+  #clock {
+    font-size: 40px;
+  }
+
+  #date, #day {
+    font-size: 18px;
+  }
+
+  body {
+    padding-top: 20px;
+  }
 }
