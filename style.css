@@ -10,3 +10,15 @@ body {
   color: limegreen;
   font-family: 'Courier New', Courier, monospace;
 }
+function updateClock() {
+  const now = new Date();
+  const time = now.toLocaleTimeString();
+  document.getElementById('clock').textContent = time;
+
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  const date = now.toLocaleDateString(undefined, options);
+  document.getElementById('date').textContent = date;
+}
+
+setInterval(updateClock, 1000);
+updateClock();
