@@ -1,5 +1,5 @@
 body {
-  IMG_8817.JPG: url('background.jpg'); /* Palitan mo kung iba ang file name ng image mo */
+  background-image: url('IMG_8817.JPG'); /* <- EXAKTO ang spelling at caps! */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -9,9 +9,10 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* ← ito ang importante, para nasa itaas */
+  justify-content: flex-start;
   align-items: center;
-  padding-top: 40px; /* space mula sa itaas */
+  padding-top: 40px;
+}
 }
 
 #clock {
